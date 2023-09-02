@@ -57,10 +57,15 @@ const infiniteLoop = () => {
             break; // comment this out to check the return type
     }
 };
+// custom type guard
+const isNumber = (value) => {
+    return typeof value === 'number' ? true : false;
+};
+// use of never type
 const numberOrString = (value) => {
     if (typeof value === 'string')
         return 'string';
-    if (typeof value === 'number')
+    if (isNumber(value))
         return 'number'; // handled both possible input cases
     return createError('This should never happen'); // handle never case
 };
