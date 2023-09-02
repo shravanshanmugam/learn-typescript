@@ -1,0 +1,5 @@
+../.idea/
+**/.gitignore
+**/modules.xml
+**/vcs.xml
+**/learn-typescript.iml
