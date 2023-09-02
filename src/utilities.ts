@@ -1,4 +1,5 @@
 // Partial, Required, Read only, Record, Pick, Omit, Exclude and Extract types
+// Non-nullable types, Return types, Parameters, Awaited
 interface Assignment {
     studentId: string,
     title: string,
