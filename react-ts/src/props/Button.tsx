@@ -5,5 +5,5 @@ type ButtonProps = {
     children: string
 }
 export const Button = (props: ButtonProps) => {
-  return <button onClick={(event) => props.handleClick(event, 1)}>{props.children}</button>
+    return <button className="custom-button" onClick={(event) => props.handleClick(event, 1)}>{props.children}</button>
 }

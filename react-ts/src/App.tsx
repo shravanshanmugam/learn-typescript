@@ -21,6 +21,7 @@ import {Private} from "./auth/Private";
 import {Profile} from "./auth/Profile";
 import {SuperHeroList} from "./generics/SuperHeroList";
 import {superHeroes} from "./generics/superheroes";
+import {CustomButton} from "./custom/CustomButton";
 
 
 function App() {
@@ -63,6 +64,8 @@ function App() {
             <SuperHeroList
                 items={superHeroes}
                 onClick={(item) => alert(item)}/>
+            <CustomButton onClick={() => alert("Clicked!")} variant="primary">Primary!!!</CustomButton>
+            <CustomButton onClick={() => alert("Clicked!")} variant="secondary">Secondary!!!</CustomButton>
         </div>
     );
 }

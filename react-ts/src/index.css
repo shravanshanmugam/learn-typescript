@@ -81,3 +81,20 @@ code {
 .list {
   background-color: seagreen;
 }
+
+.primary {
+  background-color: chartreuse;
+  border: none;
+  border-radius: 2px;
+}
+
+.secondary {
+  background-color: darkviolet;
+  color: ghostwhite;
+  border: none;
+  border-radius: 2px;
+}
+
+.primary:hover, .secondary:hover {
+  cursor: pointer;
+}
