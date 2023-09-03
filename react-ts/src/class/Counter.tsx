@@ -16,7 +16,7 @@ export class Counter extends Component<CounterProps, CounterState> {
     }
 
     render() {
-        return <div>
+        return <div className="counter">
             <p>{this.props.message} {this.state.count}</p>
             <button type="submit" onClick={this.increment}>Increment</button>
         </div>;

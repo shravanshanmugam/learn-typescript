@@ -20,7 +20,7 @@ export const MutableRef = () => {
     }, [])
 
     return (
-        <div>
+        <div className="timer">
             Timer: {timer} s
             <button onClick={stopTimer}>Stop Timer</button>
         </div>
