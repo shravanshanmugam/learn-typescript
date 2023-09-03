@@ -16,6 +16,7 @@ import {UserParent} from "./context/UserParent";
 import {UserChild} from "./context/UserChild";
 import {DomRef} from "./ref/DomRef";
 import {MutableRef} from "./ref/MutableRef";
+import {Counter} from "./class/Counter";
 
 function App() {
 
@@ -52,6 +53,7 @@ function App() {
             </UserParent>
             <DomRef/>
             <MutableRef/>
+            <Counter message="The count is:"/>
         </div>
     );
 }
