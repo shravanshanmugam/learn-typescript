@@ -1,13 +1,13 @@
 import React from 'react';
-import {Greet} from "./components/Greet";
-import {PersonList} from "./components/PersonList"
-import {Status} from "./components/Status";
-import {Heading} from "./components/Heading";
-import {Oscar} from "./components/Oscar";
-import {Button} from "./Button";
+import {Greet} from "./props/Greet";
+import {PersonList} from "./props/PersonList"
+import {Status} from "./props/Status";
+import {Heading} from "./props/Heading";
+import {Oscar} from "./props/Oscar";
+import {Button} from "./props/Button";
 import {Input} from "./Input";
-import {Container} from "./Container";
-import {Name} from "./components/Person.types";
+import {Container} from "./props/Container";
+import {Name} from "./props/Person.types";
 
 function App() {
 
