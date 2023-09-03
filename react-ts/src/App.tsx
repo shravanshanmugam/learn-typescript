@@ -10,6 +10,10 @@ import {Container} from "./props/Container";
 import {Name} from "./props/Person.types";
 import {LoggedIn} from "./state/LoggedIn";
 import {User} from "./state/User";
+import {Box} from "./context/Box";
+import {ThemeContextProvider} from "./context/ThemeContext";
+import {UserParent} from "./context/UserParent";
+import {UserChild} from "./context/UserChild";
 
 function App() {
 
@@ -38,6 +42,12 @@ function App() {
             </Container>
             <LoggedIn/>
             <User/>
+            <ThemeContextProvider>
+                <Box/>
+            </ThemeContextProvider>
+            <UserParent>
+                <UserChild/>
+            </UserParent>
         </div>
     );
 }
