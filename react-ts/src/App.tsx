@@ -9,6 +9,7 @@ import {Input} from "./props/Input";
 import {Container} from "./props/Container";
 import {Name} from "./props/Person.types";
 import {LoggedIn} from "./state/LoggedIn";
+import {User} from "./state/User";
 
 function App() {
 
@@ -32,10 +33,11 @@ function App() {
             <Container styles={{border: "1px solid black", padding: "1rem"}}>
                 <>
                     <Input value={value} handleChange={(event) => setValue(event.target.value)}/>
-                    <Button handleClick={(event, id) => console.log("Button clicked!", event, id, value)}/>
+                    <Button handleClick={(event, id) => console.log("Button clicked!", event, id, value)}>Click me!</Button>
                 </>
             </Container>
             <LoggedIn/>
+            <User/>
         </div>
     );
 }
