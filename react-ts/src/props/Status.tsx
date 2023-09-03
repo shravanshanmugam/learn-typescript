@@ -11,5 +11,5 @@ export const Status = (props: StatusProps) => {
     } else if (status === "failure") {
         message = "Error fetching data";
     }
-    return <h3>Status - {message}</h3>
+    return <div className="status"><h3>Status - {message}</h3></div>
 }

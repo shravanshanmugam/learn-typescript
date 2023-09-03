@@ -17,6 +17,8 @@ import {UserChild} from "./context/UserChild";
 import {DomRef} from "./ref/DomRef";
 import {MutableRef} from "./ref/MutableRef";
 import {Counter} from "./class/Counter";
+import {Private} from "./auth/Private";
+import {Profile} from "./auth/Profile";
 
 function App() {
 
@@ -54,6 +56,7 @@ function App() {
             <DomRef/>
             <MutableRef/>
             <Counter message="The count is:"/>
+            <Private isLoggedIn={true} Component={Profile}/>
         </div>
     );
 }
