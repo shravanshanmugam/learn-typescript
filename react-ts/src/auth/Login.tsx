@@ -1,3 +1,3 @@
 export const Login = () => {
-    return <div>Please login to continue</div>
+    return <div className="login">Please login to continue</div>
 }

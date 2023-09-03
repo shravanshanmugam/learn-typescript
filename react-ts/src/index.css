@@ -73,3 +73,7 @@ code {
 .counter {
   background-color: gainsboro;
 }
+
+.profile, .login {
+  background-color: lightpink;
+}
