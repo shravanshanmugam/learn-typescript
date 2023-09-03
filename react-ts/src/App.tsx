@@ -5,7 +5,7 @@ import {Status} from "./props/Status";
 import {Heading} from "./props/Heading";
 import {Oscar} from "./props/Oscar";
 import {Button} from "./props/Button";
-import {Input} from "./Input";
+import {Input} from "./props/Input";
 import {Container} from "./props/Container";
 import {Name} from "./props/Person.types";
 
