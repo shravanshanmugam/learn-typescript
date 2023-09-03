@@ -19,6 +19,9 @@ import {MutableRef} from "./ref/MutableRef";
 import {Counter} from "./class/Counter";
 import {Private} from "./auth/Private";
 import {Profile} from "./auth/Profile";
+import {SuperHeroList} from "./generics/SuperHeroList";
+import {superHeroes} from "./generics/superheroes";
+
 
 function App() {
 
@@ -57,6 +60,9 @@ function App() {
             <MutableRef/>
             <Counter message="The count is:"/>
             <Private isLoggedIn={true} Component={Profile}/>
+            <SuperHeroList
+                items={superHeroes}
+                onClick={(item) => alert(item)}/>
         </div>
     );
 }

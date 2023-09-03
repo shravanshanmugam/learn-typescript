@@ -77,3 +77,7 @@ code {
 .profile, .login {
   background-color: lightpink;
 }
+
+.list {
+  background-color: seagreen;
+}
