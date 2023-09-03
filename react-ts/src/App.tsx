@@ -11,9 +11,10 @@ import {Name} from "./props/Person.types";
 import {LoggedIn} from "./state/LoggedIn";
 import {User} from "./state/User";
 import {Box} from "./context/Box";
-import {ThemeContextProvider} from "./context/ThemeContext";
+import {ThemeParent} from "./context/ThemeParent";
 import {UserParent} from "./context/UserParent";
 import {UserChild} from "./context/UserChild";
+import {DomRef} from "./ref/DomRef";
 
 function App() {
 
@@ -31,23 +32,24 @@ function App() {
                 <Heading>Oscar goes to Leonardo Dicaprio!</Heading>
             </Oscar>
             <Status status="success"/>
-            <Greet name="John" messageCount={5} loggedIn={false}/>
+            <Greet name="John" messageCount={10} loggedIn/>
             <Greet name="Doe" loggedIn={false}/>
             <PersonList names={friends}/>
-            <Container styles={{border: "1px solid black", padding: "1rem"}}>
+            <Container styles={{border: "1px solid black", padding: "1rem", backgroundColor: "wheat"}}>
                 <>
                     <Input value={value} handleChange={(event) => setValue(event.target.value)}/>
-                    <Button handleClick={(event, id) => console.log("Button clicked!", event, id, value)}>Click me!</Button>
+                    <Button handleClick={(event, id) => alert("Button clicked! " + id + " " + value)}>Click me!</Button>
                 </>
             </Container>
             <LoggedIn/>
             <User/>
-            <ThemeContextProvider>
+            <ThemeParent>
                 <Box/>
-            </ThemeContextProvider>
+            </ThemeParent>
             <UserParent>
                 <UserChild/>
             </UserParent>
+            <DomRef/>
         </div>
     );
 }

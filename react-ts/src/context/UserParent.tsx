@@ -5,7 +5,7 @@ export type AuthUser = {
     email: string
 }
 
-type UserContextProviderProps = {
+type UserParentProps = {
     children: React.ReactNode
 }
 
@@ -15,7 +15,7 @@ type UserContextType = {
 }
 export const UserContext = createContext({} as UserContextType)
 
-export const UserParent = ({children}: UserContextProviderProps) => {
+export const UserParent = ({children}: UserParentProps) => {
     const [user, setUser] = useState({} as AuthUser)
     return <UserContext.Provider value={{user, setUser}}>
         {children}

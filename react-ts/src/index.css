@@ -16,3 +16,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  display: grid;
+  gap: 20px;
+  background: aliceblue;
+  border: 2px solid black;
+}
+
+.logged-in {
+  background-color: #747bff;
+}
+
+.user {
+  background-color: burlywood;
+}
+
+.theme {
+  background-color: cornflowerblue;
+}

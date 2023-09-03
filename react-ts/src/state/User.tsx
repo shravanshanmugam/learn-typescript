@@ -20,7 +20,7 @@ export const User = () => {
     const handleLogout = () => {
         setUser(null)
     }
-    return <div>
+    return <div className="user">
         <button onClick={handleLogin}>Login</button>
         <button onClick={handleLogout}>Logout</button>
         <div>User name is {user?.name}, email is {user?.email}</div>
