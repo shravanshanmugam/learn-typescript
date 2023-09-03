@@ -7,6 +7,7 @@ export const DomRef = () => {
     }, [])
     return (
         <div>
+            Auto input focus here
             <input type='text' ref={inputRef} />
         </div>
     )

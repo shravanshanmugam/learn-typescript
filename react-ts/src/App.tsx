@@ -15,6 +15,7 @@ import {ThemeParent} from "./context/ThemeParent";
 import {UserParent} from "./context/UserParent";
 import {UserChild} from "./context/UserChild";
 import {DomRef} from "./ref/DomRef";
+import {MutableRef} from "./ref/MutableRef";
 
 function App() {
 
@@ -50,6 +51,7 @@ function App() {
                 <UserChild/>
             </UserParent>
             <DomRef/>
+            <MutableRef/>
         </div>
     );
 }
