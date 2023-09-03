@@ -8,6 +8,7 @@ import {Button} from "./props/Button";
 import {Input} from "./props/Input";
 import {Container} from "./props/Container";
 import {Name} from "./props/Person.types";
+import {LoggedIn} from "./state/LoggedIn";
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
                     <Button handleClick={(event, id) => console.log("Button clicked!", event, id, value)}/>
                 </>
             </Container>
+            <LoggedIn/>
         </div>
     );
 }
